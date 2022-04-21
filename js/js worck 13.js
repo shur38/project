@@ -1,17 +1,17 @@
-console.log('arr'+ " - object");
-console.log(4 + " - object");
-let incr = 10,
-    desc = 10;
+const numberOfFilm = +prompt('сколько фильмов вы посмотрели ?',' ');
+const personalMovieDB ={
+    cont: numberOfFilm,
+    movies: { },
 
-    ////incr++;
-    ///desc--;
-    console.log(++incr);
-    console.log(--desc);
-    console.log(5%2);
-    console.log(2*5==10);
-    console.log(2+2*2 !==8);
-    const isChecked = false,
-          isClose = false;
+    actors: { },
+    genres: [],
+    private: false,
 
-console.log(isClose|| !isChecked);
-    
+};
+const a =prompt( 'один из последних просмотреных фильмов?',''),
+     b = prompt ('на сколько оцените его?',''),
+    c = prompt ('один из последних просмотреных фильмов?',''),
+    d = prompt ('на сколько оцените его?','');
+    personalMovieDB.movies[a] = b;
+    personalMovieDB.movies[c] = d;
+    console.log(personalMovieDB);

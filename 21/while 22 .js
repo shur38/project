@@ -1,69 +1,117 @@
-// let num =50;
-// while(num<=55){ 
-//     console.log(num);
-//     num++;
-// } 
-// do{
-//     console.log(num);
-//     num++;
+
+// function firstTask() {
+//   for (let i = 5; i < 11; i++) {
+//       console.log(i);
+//   }
 // }
-// while(num<=55);
-// for(let i =1; i <= 10; i++){
-//     if(i===6) {
-//         // break;
-//         continue;
-//     }
-//     console.log(i);
-    
-// } 
-// let r = 0;
-// while (r++   < 5){
-//     console.log( r );
-    
-// } 
 
-// let i = 0;
-// while (i++ < 5) console.log( i );
+// firstTask()
 
+// function secondTask() {
+//   for (let i = 20; i >= 10; i--) {
+//       if (i === 13) break;
+//       console.log(i)
+//   }
+// }
 
-//     for (number =0;number < 100; number++){
-//      console.log(number);
-      
+// secondTask()
 
-
-        
+// function thirdTask() {
+//   for (let i = 2; i <= 10; i++) {
+//       if (i % 2 === 0) {
+//           console.log(i);
 //       }
-// for (let i = 0; i < 10; i++) {
+//   }
+// }
 
-//     // если true, пропустить оставшуюся часть тела цикла
-//     if (i % 2 !==1) continue;
+// thirdTask()
+
+// // for (let i = 2; i <= 16; i++) {
+// //     if (i % 2 === 0) {
+// //         continue;
+// //     } else {
+// //         console.log(i);
+// //     }
+// // }
+
+// function fourthTask() {
+//   let i = 2;
+
+//   while (i <= 16) {
+//       if (i % 2 === 0) {
+//           i++;
+//           continue;
+//       } else {
+//           console.log(i);
+//       }
+//       i++;
+//   }
+// }
+
+// fourthTask()
+
+// function fifthTask() {
+//   const arrayOfNumbers = [];
+
+//   for (let i = 5; i < 11; i++) {
+//       arrayOfNumbers[i - 5] = i;
+//   }
+
+//   console.log(arrayOfNumbers);
+//   return arrayOfNumbers;
+// }
+
+// fifthTask()
+function firstTask() {
+  // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+  const arr = [3, 5, 8, 16, 20, 23, 50];
+  const result = [];
+
+  // Пишем решение вот тут
+  for (let i = 0; i < arr.length; i++) {
+    result[arr] = i;
+
+  console.log(result); 
+  }
+  // Не трогаем
+  return result;
+}
+
+// Место для второй задачи
+function secondTask() {
+  // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+  const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+  // Пишем решение вот тут
   
-//     console.log(i); // 1, затем 3, 5, 7, 9
+  
+  // Не трогаем
+  return data;
+}
 
-} //   }
-for (i = 0; i < 3; i++) {
+// Место для третьей задачи
+function thirdTask() {
+  // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+  const data = [5, 10, 'Shopping', 20, 'Homework'];
+  const result = [];
 
-  for (j = 0; j < 3; j++) {
-    console.log(j, i);
+  // Пишем решение вот тут
+  
+  
+  // Не трогаем
+  return result;
+}
 
-  }
-  let resuit = '';
-  const lenght = 7;
-  for (let i = 1; i < lenght; i++) {
-    for (let j = 0; j < i; j++) {
-      resuit += '*';
-    }
-    resuit += '\n'
-  }
-  console.log(resuit)
-  first: for (i = 0; i < 3; i++) {
-    console.log(`First level: ${i}`);
-    for (j = 0; j < 3; j++) {
-      console.log(`Second level: ${j}`);
-      for (k = 0; k < 5; k++) {
-        if (k === 2) break first;// or continue
-        console.log(`Third level: ${k}`);
+const arr = [3, 5, 8, 16, 20, 23, 50];
+const result = [];
 
-      }
-    }
-  }
+// Пишем решение вот тут
+for (let i = 1; i <= arr.length; i++) {
+result[i - 1] = arr[arr.length -i];
+
+
+}
+console.log(result);
+// Не трогаем
+return result;
+}

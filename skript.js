@@ -1,56 +1,98 @@
-const select = document.querySelector('select');
-const para = document.querySelector('p');
+// function showFirstMessage(){
 
-select.onchange = setWeather;
+//   console.log('hello world');
+// }
+// showFirstMessage();
+// let num =20;
+// let num1 = 21;
+// function showFirstMessage(text){
 
-function setWeather() {
-  const choice = select.value;
+//   console.log(text);
+//    num  = num1 + 20;
+// }
+// showFirstMessage('hello world'+num+num1);
+// console.log(num);
+function calc(a, b){
+  return(a+b);
+}
+console.log(calc(3,6));
+console.log(calc(55,12));
 
-  if(choice === 'sunny') {
-    para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
-  } else if(choice === 'rainy') {
-    para.textContent = 'Rain is falling outside; take a rain coat and a brolly, and don\'t stay out for too long.';
-  } else if(choice === 'snowing') {
-    para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
-  } else if(choice === 'overcast') {
-    para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
-  } else {
-    para.textContent = '';
+function ret(){
+  let num = 50*2;
+  return num;
+}
+const anotherNum = ret();
+console.log(anotherNum)
+const logger = function (){
+
+  console.log('hello world');
+
+};
+logger();
+
+const calc = (a,b) =>{
+  console.log('1');
+  return a+b
+}
+console.log(calc(33,33));
+
+
+
+let a = 3
+function addTwo(x) {
+let ret = x + 2
+ return ret
+}
+ let b = addTwo(a)
+ console.log(b)
+
+ let val1 = 2
+function multiplyThis(n) {
+  let ret = n * val1
+  return ret
+}
+let multiplied = multiplyThis(6)
+console.log('example of scope:', multiplied)
+
+let val = 7
+ function createAdder() {
+   function addNumbers(a, b) {
+    let ret = a + b
+     return ret
+   }
+   return addNumbers
+  }
+ let adder = createAdder()
+let sum = adder(val, 8)
+console.log('example of function returning a function: ', sum);
+
+ function createCounter() {
+    let counter = 0
+     const myFunction = function() {
+     counter = counter + 1
+     return counter
+    }
+   return myFunction
+   }
+   const increment = createCounter()
+  const c1 = increment()
+  const c2 = increment()
+  const c3 = increment()
+  console.log('example increment', c1, c2, c3)
+
+  let c = 4
+function addX(x) {
+  return function(n) {
+     return n + x
   }
 }
-const lines = 5;
-let result = '';
+const addThree = addX(3)
+let d = addThree(c)
+console.log('example partial application', d)
 
-for (let i = 0; i <= lines; i++) {
-    for (let j = 0; j < lines -i; j++) {
-        result += " ";
-    }
-  for (let j = 0; j < 2 * i + 1; j++) {
-       result += "*";
- }
-    result += "\n";
-
-  }
-console.log(result)
-
-const lines = 5;
-let result = '';
-
-for (let i = 0; i <= lines; i++) {
-    for (let j = 0; j < lines -i; j++) {
-        result += "+";
-    }
-  // for (let j = 0; j < 2 * i + 1; j++) {
-  //      result += "*";
- 
-    result += "\n";
-
-  }
-console.log(result)
-
-// *
-// **
-// ***
-// ****
-// *****
-// ******
+let c = 4
+const addX = x => n => n + x
+const addThree = addX(3)
+let d = addThree(c)
+console.log('example partial application', d)

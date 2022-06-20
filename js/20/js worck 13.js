@@ -1,8 +1,23 @@
-const usdCurr = 28,
-      eurCurr=32;
-function convert (amount,curr) {
-    alert(curr*amount)
-
-}
-convert(500,usdCurr);
-convert(500,eurCurr);
+const str ="test";
+const arr =[1, 2, 3];
+console.log(str.length);
+console.log(arr.length);
+console.log(str[2]);
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+const fruit = "Some Fruit";
+console.log(fruit.indexOf("Fruit"));
+const logg = "hello world";
+console.log( logg.slice(6, 11));
+console.log( logg.substring(6, 11));
+console.log( logg.substr(5, 8))
+ const num =12.2;
+ console.log( Math.round(num));
+ const test1 = "12.2px";
+  console.log(parseFloat(test1));
+  const str = 'kot';
+  return 'кот';
+  console.log(str.charAt(2));
+  var num = 15;
+console.log(String.replace(num, /5/, '2'));
+console.log("oll by ok,just trust me");

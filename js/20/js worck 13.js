@@ -1,33 +1,23 @@
-// if (4==9){
-//     console.log('ok!');
-
-// }else{
-// console.log('error!');
-// }
-
-const nam = 50;
-if (nam<33){
-    console.log('error!');
-}else if (nam > 100){
-    console.log('много');
-}else{
-    console.log('ok!')
-}
-(nam ===50) ? console.log('ok!') : console.log('Error');
-
-const nam =50;
-
-switch (nam){
-    case 49:
-        console.log('wrong');
-        break;
-        case 100:
-            console.log('wrong');
-            break;
-            case 50:
-            console.log('this true');
-            break;
-            default:
-                console.log('true ok!');
-                break;
-}
+const str ="test";
+const arr =[1, 2, 3];
+console.log(str.length);
+console.log(arr.length);
+console.log(str[2]);
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+const fruit = "Some Fruit";
+console.log(fruit.indexOf("Fruit"));
+const logg = "hello world";
+console.log( logg.slice(6, 11));
+console.log( logg.substring(6, 11));
+console.log( logg.substr(5, 8))
+ const num =12.2;
+ console.log( Math.round(num));
+ const test1 = "12.2px";
+  console.log(parseFloat(test1));
+  const str = 'kot';
+  return 'кот';
+  console.log(str.charAt(2));
+  var num = 15;
+console.log(String.replace(num, /5/, '2'));
+console.log("oll by ok,just trust me");

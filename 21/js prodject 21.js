@@ -86,3 +86,4 @@ console.log(arr1);
  }
  console.log(ret);
 }
+thirdTask();
